@@ -14,19 +14,10 @@
 
 ## AFLW
 
-#### Notes
-- We observe about 1 MOTA noise.
-- If the resulting MOTA of your self-trained model is not desired, playing around with the --track_thresh sometimes gives a better performance.
-- The default track_thresh is 0.4, except for 0.5 in crowdhuman.
-- The training time is on 8 NVIDIA V100 GPUs with batchsize 16.
-- We use the models pre-trained on imagenet.
-- (crowdhuman, mot17_half) is first training on crowdhuman, then fine-tuning on mot17_half.
-
-
 
 
 ## Installation
-The codebases are built on top of [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR) and [CenterTrack](https://github.com/xingyizhou/CenterTrack).
+The codebases are built on top of [MDM](https://github.com/trigeorgis/mdm)
 
 #### Requirements
 - Linux, CUDA>=9.2, GCC>=5.4
