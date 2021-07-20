@@ -4,8 +4,8 @@ import os
 import common_params
 
 base_dir = '/opt/nwtc'
-work_dir = '/opt/nwtc/models/98_p_l1_loss_wflw/' 
-model_dir = '/opt/nwtc/models/98_p_l1_loss_wflw/'
+work_dir = '/opt/nwtc/models/49_p_l1_loss_wflw/'
+model_dir = '/opt/nwtc/models/49_p_l1_loss_wflw/'
 gt_dir = '/opt/nwtc/WFLW/train/images/'
 image_dir = '/opt/nwtc/WFLW/train/images/'
 pose_dir = ''
