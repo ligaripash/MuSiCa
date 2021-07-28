@@ -265,9 +265,9 @@ def render_flm_on_top_of_image_recursive(image_dir, flm_dir, bbs_dir, out_dir, r
 ########################################################################################################################
 
 if __name__ == "__main__":
-    image_dir = "/opt/nwtc/WFLW/test/all/images"
-    estimated_flm = '/opt/nwtc/models/49_p_l1_loss_wflw/res_21300/wflw_all'    # estimated_flm = '/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG/'
-    bbs_dir = "/opt/nwtc/WFLW/bb/images"
+    image_dir = "/opt/kwtc/WFLW/test/all/images/"
+    estimated_flm = '/opt/kwtc/output/' 
+    bbs_dir = "/opt/kwtc/WFLW/bb/images/"
     out_dir = '/tmp/'
 
     # fix_pupils_for_flm(estimated_flm)
