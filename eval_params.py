@@ -22,14 +22,14 @@ FIGURE_PATH = 'recentResults/lastFig.png'
 mode = 'silhouette' # '3d' or 'silhouette'
 
 
-reference_shape = '/opt/nwtc/WFLW/'
-model_dir = '/opt/nwtc/models/49_p_l1_loss_wflw/'
+reference_shape = '/opt/kwtc/WFLW/'
+model_dir = '/opt/kwtc/models/49_p_l1_loss_wflw/'
 
 gt_dir = ''
-eval_files = '/opt/nwtc/WFLW/wflw_expressions.txt'
+eval_files = '/opt/kwtc/WFLW/wflw_expressions.txt'
 
-image_dir = '/opt/nwtc/WFLW/test/all/images/'
-bbs_dir = '/opt/nwtc/WFLW/bb/test/all/images/'
+image_dir = '/opt/kwtc/WFLW/test/all/images/'
+bbs_dir = '/opt/kwtc/WFLW/bb/test/all/images/'
 
 
 with open(eval_files) as f:
@@ -41,7 +41,7 @@ file_count = i + 1
 model_steps = [21300]  # range(300, 1200, 300)
 
 
-results_dir = '/opt/nwtc/models/49_p_l1_loss_wflw/res_21300/wflw_expressions/'
+results_dir = '/opt/kwtc/output/'
 model = 'model.ckpt-%d' % model_steps[0]
 dump_tf_weights = False
 

@@ -3,16 +3,16 @@ import tensorflow as tf
 import os
 import common_params
 
-base_dir = '/opt/nwtc'
-work_dir = '/opt/nwtc/models/49_p_l1_loss_wflw/'
-model_dir = '/opt/nwtc/models/49_p_l1_loss_wflw/'
-gt_dir = '/opt/nwtc/WFLW/train/images/'
-image_dir = '/opt/nwtc/WFLW/train/images/'
+base_dir = '/opt/kwtc'
+work_dir = '/opt/kwtc/models/49_p_l1_loss_wflw/'
+model_dir = '/opt/kwtc/models/49_p_l1_loss_wflw/'
+gt_dir = '/opt/kwtc/WFLW/train/images/'
+image_dir = '/opt/kwtc/WFLW/train/images/'
 pose_dir = ''
 roll_dir = ''
-bbs_dir = '/opt/nwtc/WFLW/bb/train/images/'
-train_file_list = '/opt/nwtc/WFLW/wflw_files_augmented_mahal.txt'
-init_shape_path = '/opt/nwtc/WFLW/'
+bbs_dir = '/opt/kwtc/WFLW/bb/train/images/'
+train_file_list = '/opt/kwtc/WFLW/wflw_files_augmented_mahal.txt'
+init_shape_path = '/opt/kwtc/WFLW/'
 is_finetune = 0
 model_step = ''
 pretrained_model = ''
