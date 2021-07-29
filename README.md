@@ -10,104 +10,42 @@
 [Knowing When to Quit: Selective Cascaded Regression withPatch Attention for Real-Time Face Alignment](https://arxiv.org/abs/2012.15460)
 
 
-## 300W
-
-## AFLW
-
-
-
 ## Installation
 The codebases are built on top of [MDM](https://github.com/trigeorgis/mdm)
 
-#### Requirements
-- Linux, CUDA>=9.2, GCC>=5.4
-- Python>=3.7
-- PyTorch ≥ 1.5 and [torchvision](https://github.com/pytorch/vision/) that matches the PyTorch installation.
-  You can install them together at [pytorch.org](https://pytorch.org) to make sure of this
-- OpenCV is optional and needed by demo and visualization
-
-
 #### Steps
-1. Install and build libs
-```
-git clone https://github.com/PeizeSun/TransTrack.git
-cd TransTrack
-cd models/ops
-python setup.py build install
-cd ../..
-pip install -r requirements.txt
-```
+##### Run docker:
+  1. Download the docker image.
+  2. Load the image: nvidia-docker load < kwtc_docker_image.tar.gz
+  3. Run the image: nvidia-docker run -v your_download_dir:dest_dir -it kwtc:new /bin/bash (The -v is needed to copy files to your container)
 
-2. Prepare datasets and annotations
-```
-mkdir crowdhuman
-cp -r /path_to_crowdhuman_dataset/CrowdHuman_train crowdhuman/CrowdHuman_train
-cp -r /path_to_crowdhuman_dataset/CrowdHuman_val crowdhuman/CrowdHuman_val
-mkdir mot
-cp -r /path_to_mot_dataset/train mot/train
-cp -r /path_to_mot_dataset/test mot/test
-```
-CrowdHuman dataset is available in [CrowdHuman](https://www.crowdhuman.org/). 
-```
-python3 track_tools/convert_crowdhuman_to_coco.py
-```
-MOT dataset is available in [MOT](https://motchallenge.net/).
-```
-python3 track_tools/convert_mot_to_coco.py
-```
-
-3. Pre-train on crowdhuman
-```
-sh track_exps/crowdhuman_train.sh
-python3 track_tools/crowdhuman_model_to_mot.py
-```
-The pre-trained model is available [crowdhuman_final.pth](https://drive.google.com/drive/folders/1DjPL8xWoXDASrxgsA3O06EspJRdUXFQ-?usp=sharing).
-
-4. Train TransTrack
-```
-sh track_exps/crowdhuman_mot_trainhalf.sh
-```
-
-5. Evaluate TransTrack
-```
-sh track_exps/mot_val.sh
-sh track_exps/mota.sh
-```
-
-6. Visualize TransTrack
-```
-python3 track_tools/txt2video.py
-```
-
-
-## Test set
-Pre-training data | Fine-tuning data | Training time | MOTA% | FP | FN | IDs
-:---:|:---:|:---:|:---:|:---:|:---:|:---:
-crowdhuman | mot17 | ~40h + 2h | 68.4 | 22137  | 152064  | 3942  
-crowdhuman | crowdhuman + mot17 | ~40h + 6h | 74.5 | 28323 | 112137 | 3663 
-
-#### Notes
-- Performance on test set is evaluated by [MOT challenge](https://motchallenge.net/).
-- (crowdhuman + mot17) is training on mixture of crowdhuman and mot17.
-- We won't release trained models for test test. Running as in Steps could reproduce them. 
+##### git clone:
+  4. Inside the container: cd /opt/kwtc/
+  5. git clone https://github.com/ligaripash/MuSiCa.git
  
-
-## License
-
-TransTrack is released under MIT License.
-
-
-## Citing
-
-If you use TransTrack in your research or wish to refer to the baseline results published here, please use the following BibTeX entries:
-
-```BibTeX
-
-@article{transtrack,
-  title   =  {TransTrack: Multiple-Object Tracking with Transformer},
-  author  =  {Peize Sun and Jinkun Cao and Yi Jiang and Rufeng Zhang and Enze Xie and Zehuan Yuan and Changhu Wang and Ping Luo},
-  journal =  {arXiv preprint arXiv: 2012.15460},
-  year    =  {2020}
-}
-
-```
+##### WFLW:
+  6. Download the WFLW from here.
+  7. copy WFLW.tar.gz to /opt/kwtc/
+  8. gunzip WFLW.tar.gz
+  9. tar xvf WFLW.tar
+  
+##### Models:
+  10. Download the model from here.
+  11. Copy models.tar.gz to /opt/kwtc/
+  12. gunzip models.tar.gz
+  13. tar xvf models.tar
+  
+##### Run inference on a pretrained model with 49 patches:
+  14. cd MuSica
+  15. python inference.py ( inference.json contains the inference paramters). The output is written to /opt/kwtc/output/
+  16. Render the calculated landmarks on image: python show_flm_on_image.py ( the output images are written to /tmp/ )
+  
+ ##### Evaluate the inference against WFLW ground-truth (expression subset)
+  17. python evaluate.py (evaluate.json contains the evluation parameters). You should get 0.088 average normalized error.
+  
+  
+ ##### To train the model:
+  
+  18. python train.py (train_params.py contain the trainig parameters)
+  
+  
