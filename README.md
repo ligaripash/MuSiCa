@@ -15,7 +15,7 @@ The codebases are built on top of [MDM](https://github.com/trigeorgis/mdm)
 
 #### Steps
 ##### Run docker:
-  1. Download the docker image.
+  1. Download the docker image from [here](https://drive.google.com/file/d/1Ctjgti8cI9FGVUQKe_RKqnbWDwPS0LBw/view?usp=sharing)
   2. Load the image: nvidia-docker load < kwtc_docker_image.tar.gz
   3. Run the image: nvidia-docker run -v your_download_dir:dest_dir -it kwtc:new /bin/bash (The -v is needed to copy files to your container)
 
@@ -24,13 +24,13 @@ The codebases are built on top of [MDM](https://github.com/trigeorgis/mdm)
   5. git clone https://github.com/ligaripash/MuSiCa.git
  
 ##### WFLW:
-  6. Download the WFLW from here.
+  6. Download the WFLW from [here](https://drive.google.com/file/d/1Cui9OMMwj0D1Jvl1ez2_6eg5-XxVTgDu/view?usp=sharing).
   7. copy WFLW.tar.gz to /opt/kwtc/
   8. gunzip WFLW.tar.gz
   9. tar xvf WFLW.tar
   
 ##### Models:
-  10. Download the model from here.
+  10. Download the model from [here](https://drive.google.com/file/d/1bFwZXSROY_Zi3p28q_XHneHo3R37iqj0/view?usp=sharing).
   11. Copy models.tar.gz to /opt/kwtc/
   12. gunzip models.tar.gz
   13. tar xvf models.tar
@@ -43,9 +43,7 @@ The codebases are built on top of [MDM](https://github.com/trigeorgis/mdm)
  ##### Evaluate the inference against WFLW ground-truth (expression subset)
   17. python evaluate.py (evaluate.json contains the evluation parameters). You should get 0.088 average normalized error.
   
-  
  ##### To train the model:
-  
   18. python train.py (train_params.py contain the trainig parameters)
   
   
