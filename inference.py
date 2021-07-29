@@ -5,7 +5,7 @@ from __future__ import division
 from __future__ import print_function
 
 import common_params
-from eval_params import *
+from inference_params import *
 from datetime import datetime
 
 import data_provider
