@@ -1,0 +1,247 @@
+
+{
+  "dump_output_files": false,
+  "output_dir" : "/home/gilsh/FLM/debug/",
+  "contour_name": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+  "metric": "contour_distance_",
+  "normalization": "ocular",
+  "intersect_data": false,
+  "recall_rate": -1,
+
+  "Data": [
+  {
+    "image_dir": "/mnt/algo-datasets/DB/FLM/300W/testset/",
+    "gt_dir": "/mnt/algo-datasets/DB/FLM/300W/testset/",
+    "gt_contours": ["jaw"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/paper/68_patches_with_rot_aug/res_10800/ibug/",
+    "rect_dir": "/mnt/algo-datasets/DB/FLM/300W/bb/testset/",
+    "desc": "LFPW testset",
+    "estimated_contours": [],
+    "flm_count": 68
+  }
+
+  ],
+  "Data_": [
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/gt/165_silhouette/Arcsoft/IBUG",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "Arcsoft recall=0.488",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_300w_lp_EE_manual_20/res_29700/IBUG/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME 165 patches on recall=0.488",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_300w_lp_EE_manual_20_21_patches_conv_16/res_24300/IBUG/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME 21 patches reduced conv on recall=0.488",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  }
+  ],
+
+  "Data_ibugg": [
+
+
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/gt/165_silhouette/Arcsoft/IBUG",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "Arcsoft",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_plus_300W_LP_with_confidence/res_54000/IBUG/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME with error estimation",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_300w_lp_EE_manual_20/res_17100/IBUG/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME with error estimation with EE 20",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_plus_300W_LP_ms_NFD/res_21900/IBUG/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME without error estimation",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  }
+
+
+
+
+
+  ],
+
+
+  "Data___": [
+
+
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/300W_LP_multi_scale_3_levels_3_iterations_no_pose_scale_10_NFD_fixed_preprocess_no_conv3/res_21900/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME trained on 300W_LP",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/Arcsoft_ms_3_scale_10_NFD_no_conv3/res_18900/IBUG/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME trained on DB100KSmileBlink with Arcsoft data",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_plus_300W_LP_ms_NFD/res_21900/IBUG/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME trained on DB100KSmileBlink and 300W_LP 50K images",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/gt/165_silhouette/Arcsoft/IBUG",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "Arcsoft",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_plus_300W_LP_with_confidence/res_54000/IBUG/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME with confidence",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  }
+
+
+
+
+  ],
+
+   "Data_test": [
+   {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/test_set/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/gt/165_silhouette/tst_mnm_tool/test_set",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_300w_lp_no_EE/res_54000/test_set/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/NFDv3/bbs_manual/test_set",
+    "desc": "FLAME no EE",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+   {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/test_set/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/gt/165_silhouette/tst_mnm_tool/test_set",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_300w_lp_EE_manual_20/res_10200/test_set/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/NFDv3/bbs_manual/test_set",
+    "desc": "FLAME EE",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  }
+
+  ],
+   "Data__": [
+   {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/test_set/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/gt/165_silhouette/tst_mnm_tool/test_set",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_plus_300W_LP_ms_NFD_5k/res_3600/test_set/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/NFDv3/bbs_manual/test_set",
+    "desc": "FLAME multi-scale NFD trained on 5K images (DB100K + 300W_LP) Arcsoft output\"",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+
+   {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/test_set/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/gt/165_silhouette/tst_mnm_tool/test_set",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/Arcsoft_ms_3_scale_10_NFD_no_conv3/test_set/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/NFDv3/bbs_manual/test_set",
+    "desc": "FLAME multi-scale NFD trained on Arcsoft's output on DB100K",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/test_set/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/gt/165_silhouette/tst_mnm_tool/test_set",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/alg_output/165_silhouette/arcsoft/test_set/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/NFDv3/bbs_manual/test_set",
+    "desc": "Arcsoft",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/test_set/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/gt/165_silhouette/tst_mnm_tool/test_set",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_plus_300W_LP_with_confidence/res_16500/test_set/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/NFDv3/bbs_manual/test_set",
+    "desc": "FLAME with confidence",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  }
+
+
+
+
+   ],
+
+  "Data_": [
+
+
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/experiments/sil/arcsoft_plus_300W_LP_ms_NFD/res_21900/IBUG/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME non quantized",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  },
+  {
+    "image_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/images/300W_LP/IBUG/",
+    "gt_dir": "/raid/algo/SOCVISION_SLOW/FLM/labelers/manual_gt/sil_165/IBUG",
+    "gt_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseP", "noseM", "pupilL", "pupilR"],
+    "estimated_dir": "/home/gilsh/FLM/flame/FLAME_simulator/debug/out/sim_ibug_new_rects/",
+    "rect_dir": "/raid/algo/SOCVISION_SLOW/FLM/flm_db/fd_rects/HFD/bbs/IBUG",
+    "desc": "FLAME new rects",
+    "estimated_contours": ["jaw", "browL", "browR", "eyeL", "eyeR", "mouthO", "mouthI", "noseM", "pupilL", "pupilR"]
+  }
+
+  ]
+}
+
