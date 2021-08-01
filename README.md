@@ -7,7 +7,8 @@
 
 
 ## Introduction
-[Knowing When to Quit: Selective Cascaded Regression withPatch Attention for Real-Time Face Alignment](https://arxiv.org/abs/2012.15460)
+This is an implementation of the fast and accurate face alignment algorithm presented in:
+[Knowing When to Quit: Selective Cascaded Regression with Patch Attention for Real-Time Face Alignment](https://arxiv.org/abs/2012.15460)
 
 
 ## Installation
